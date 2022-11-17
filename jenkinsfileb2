@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build completed'
+            }
+        }
+         stage('Deploy') {
+            steps {
+                echo 'Deplyement successful'
+            }
+        }
+         stage('Test') {
+            steps {
+                echo 'Tested code  no issues'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'R2022 - Release completed in prodcution'
+            }
+        }
+    }
+}
